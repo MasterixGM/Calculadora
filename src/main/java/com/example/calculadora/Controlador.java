@@ -24,6 +24,7 @@ public class Controlador {
     public void borrarTodo() {
         pantalla.clear();
     } // Metodo para borrar la pantalla.
+
     public void borrarUltimo(){ // Metodo para borrar el ultimo digito mostrado.
         if (!pantalla.getText().isEmpty()){
             pantalla.setText(pantalla.getText(0, pantalla.getLength()-1));
@@ -76,5 +77,4 @@ public class Controlador {
             error("Introduzca Numeros");
         }
     }
-
 }
